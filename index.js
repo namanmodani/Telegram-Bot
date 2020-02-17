@@ -14,7 +14,12 @@ const variations = [
   'Umma nice',
   'hehe yeah boi',
   'ooh ya',
-  '( ͡° ͜ʖ ͡°)'
+  '( ͡° ͜ʖ ͡°)',
+  'damn bruh',
+  'hehehe',
+  'I concur-',
+  'did I hear 69?!',
+  'ikr'
 ];
 
 // On New Message
