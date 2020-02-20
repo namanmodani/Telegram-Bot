@@ -1,5 +1,5 @@
 const TelBot = require('node-telegram-bot-api');
-
+const request = require('request');
 const token = '';
 const bot = new TelBot(token, { polling: true });
 
@@ -24,10 +24,23 @@ const variations = [
 
 // On New Message
 bot.on('message', msg => {
-  if (msg.text == undefined) {
-    return;
-  }
+  // if (msg.text == undefined) {
+  //   return;
+  // }
+  if (msg.photo != undefined) {
+    var photo_path;
+    // gets path of photo so we can get the photo url
+    let url = "https://api.telegram.org/bot" + token + "/getFile?file_id=" + msg.photo[0].file_id;
+    request(url, function(err, res, body) {
+     photo_path = JSON.parse(body).result.file_path
+    });
 
+    // should begin to get photo url
+    let ax = "https://api.telegram.org/file/bot" + token +"/" + photo_path
+    request(ax, function(err, res, body) {
+      photo_url = body
+    });
+  }1080271099:AAFXB49LD5ByZy89X5GFpFkjmFaLdPs4jQM
   const newMsg = msg.text;
 
   // Send if text contains 69
@@ -37,4 +50,5 @@ bot.on('message', msg => {
       variations[Math.floor(Math.random() * variations.length)];
     bot.sendMessage(msg.chat.id, randomNice, { reply_to_message_id: msg.message_id});
   }
+
 });
