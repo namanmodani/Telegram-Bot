@@ -1,7 +1,7 @@
 const tesseract = require('tesseract.js');
 const TelBot = require('node-telegram-bot-api');
 const request = require('request-promise');
-const token = '1080271099:AAFXB49LD5ByZy89X5GFpFkjmFaLdPs4jQM';
+const token = '';
 const bot = new TelBot(token, { polling: true });
 // Variations of Nice
 const variations = [
