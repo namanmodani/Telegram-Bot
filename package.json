@@ -9,6 +9,7 @@
   "author": "sayamss",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^8.2.0",
     "firebase": "^7.8.2",
     "node-telegram-bot-api": "^0.40.0",
     "now": "^17.0.3",
