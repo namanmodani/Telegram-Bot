@@ -8,6 +8,7 @@
 3. Tesseract-js
 
 ### Contributors
+0. Me, Ofcourse
 1. [Bartek Pacia](https://github.com/bartekpacia)
 2. [Diogo S.C. Fernandes](https://github.com/diogoscf)
 3. [Uzay Girit](https://github.com/Uzay-G)
