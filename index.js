@@ -24,6 +24,14 @@ const variations = [
   "I concur-",
   "did I hear 69?!",
   "ikr"
+  "of course!"
+  "ok"
+  "sweet"
+  "smashing"
+  "tip-top"
+  "yum-yum"
+  ";))"
+  "ding dong nice"
 ];
 
 /**
